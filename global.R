@@ -30,18 +30,15 @@ library(data.table)
 library(readxl)
 library(rio)
 
-
-
 #Read data from data folder
-all_files <- list.files("data", pattern = c(".csv|.xlsx"))
+all_files <- list.files("data", pattern = c(".csv"))
 dt_list  <- vector("list", length = length(all_files))
-dt_list <- lapply(all_files, function(i) {
-  dt <- rio::import(paste0("data/",i))
-})
-names(dt_list) <- gsub(".csv|.xlsx","",all_files)
+
+for(i in 1:length(all_files)){
+    dt_list[[i]] <- read.csv(paste0("data/",all_files[[i]]), stringsAsFactors = F,fileEncoding="latin1")
+}
+names(dt_list) <- gsub(".csv","",all_files)
 list2env(dt_list, envir=.GlobalEnv)
-
-
 
 
 

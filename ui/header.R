@@ -1,0 +1,10 @@
+dashboardHeader(title = "",
+                tags$li(h4("Cyber Attacks & Data Breaches", 
+                           height = "50px",
+                           style = "color:#A2482E;padding-top:14px; padding-bottom:10px;"),
+                        class = "dropdown"),
+                tags$li(a(href = 'https://www.hhs.gov/',
+                          img(src = 'hhsLogo.png',
+                              title = "https://www.hhs.gov/", height = "48px", width = "50px"),
+                          style = "padding-top:10px; padding-bottom:10px;padding-right:40px;"),
+                        class = "dropdown"))
