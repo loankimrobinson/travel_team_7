@@ -17,9 +17,9 @@ tagList(
                div(style = "display:inline;outline:none;vertical-align: top;align:right;",
                uiOutput("search_out"))),
         column(2,
-               div(style = "display:inline;outline:none;vertical-align: top;align:left;",
-               actionButton("search_bt",icon =  icon("fas fa-search"), label = NULL, 
-                            style = "height: 50px; width:100%;background-color:#ec6205;border-color:#ec6205;border:0px;border-radius:0px;"))
+               div(id = "search_home",style = "display:inline;outline:none;vertical-align: top;align:left;",
+               actionButton("search_bt",icon =  icon("fas fa-search"), label = NULL,  
+                            style = "height: 50px; width:100%;background-color:#ec6205;color:white;border-color:#ec6205;border:0px;border-radius:0px;"))
         )
               )
         )

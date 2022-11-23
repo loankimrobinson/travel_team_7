@@ -94,7 +94,7 @@ output$global_search <- renderUI({
       )
     ),br(),
     div(style = "text-align:center;",
-        actionButton("submit_bt",icon =  icon("fas fa-search"), label = "Search", 
+        actionButton("submit_bt",icon =  icon("fas fa-search"), label = NULL, 
                      style = "height: 40px; width:90%;color:white;background-color:#ec6205;border-color:#ec6205;border:0px;border-radius:0px;")),
     br(),
     br()
