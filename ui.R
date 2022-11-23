@@ -5,6 +5,8 @@ ui = dashboardPage(
   header = source(file.path("ui", "header.R"),  local = TRUE)$value,
   sidebar = source(file.path("ui", "sidebar.R"),  local = TRUE)$value,
   body = dashboardBody(
+    tags$head(tags$style(HTML("#search + div > .selectize-input {height: 50px;padding-right:0px;padding-left: 20px;border:0px;border-radius:0px;font-size: 30px;}"))),
+    tags$head(tags$style(HTML("#search  .selectize-control.single .selectize-input:after{content: none;}"))),
     tags$head(tags$style(".leaflet .legend i{border-radius: 50%;width:10px;height: 10px;margin-top: 4px;}")),
     tags$head(tags$style(".leaflet .legend {background-color:transparent;color:white;}")),
     tags$head(tags$style(HTML("#tab1_under .multicol {height: 100px;
@@ -15,7 +17,7 @@ ui = dashboardPage(
                                    -column-fill: auto;
                                  }
                                  "))),
-    tags$head(tags$style(type="text/css","label{ display: table-cell; text-align: center;vertical-align: middle; } .form-group { display: table-row;}")),
+    #tags$head(tags$style(type="text/css","label{ display: table-cell; text-align: center;vertical-align: middle; } .form-group { display: table-row;}")),
     #switchInput color while on
     tags$head(tags$style(HTML('.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-danger,
                                        .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-danger {
@@ -56,7 +58,7 @@ ui = dashboardPage(
     tags$style(HTML(".dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing,.dataTables_wrapper .dataTables_paginate .paginate_button, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled {color: black!important;font-weight:normal;}")),
     tabItems(
       tabItem(tabName = "homeTab",
-              #source(file.path("ui", "home_ui.R"),  local = TRUE)$value
+              source(file.path("ui", "home_ui.R"),  local = TRUE)$value
       ),
       tabItem(tabName = "under_investigationTab",
               

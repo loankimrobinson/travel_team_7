@@ -2,8 +2,8 @@
 fluidRow(
     tags$div(
       tags$footer("Data source:",
-                  tags$a("U.S. Department of Health & Human Services",
-                         href = "https://www.hhs.gov/",
+                  tags$a("Travel Booking",
+                         href = "https://www.booking.com/",
                          target = "_blank")),
       tags$footer("Author:",
                   tags$a("Loan Kim Robinson ",
@@ -13,21 +13,11 @@ fluidRow(
                   tags$a("loankimrobinson@gmail.com",
                          href = "mailto:loankimrobinson@gmail.com",
                          target = "_blank")),
-      # tags$footer(("Built with"),
-      #             tags$a(href = "http://www.r-project.org/",
-      #                    target = "_blank",
-      #                    "R,"),
-      #             tags$a(href = "http://shiny.rstudio.com",
-      #                    target = "_blank",
-      #                    "Shiny"),
-      #             ("&"),
-      #             tags$a(href = "http://www.rstudio.com/products/shiny/shiny-server",
-      #                    target = "_blank",
-      #                    "Shiny Server."),
+
                   tags$a(
-                    href = "https://www.hhs.gov/",
+                    href = "https://www.booking.com/",
                     target = "_blank",
-                    tags$img( src = "hhsLogo.png",
+                    tags$img( src = "logo.png",
                               height='10%',
                               width = 70,
                               alt = "logo"))
