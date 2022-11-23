@@ -12,12 +12,12 @@ tagList(
                   )),
   br(),
   fluidRow(
-        column(2,""),
-        column(6,
-               div(class = "row no-gutter", style = "display:inline;outline:none;vertical-align: top;align:right;",
-               uiOutput("search"))),
+        column(3,""),
+        column(4,
+               div(style = "display:inline;outline:none;vertical-align: top;align:right;",
+               uiOutput("search_out"))),
         column(2,
-               div(class = "row no-gutter",style = "display:inline;outline:none;vertical-align: top;align:left;",
+               div(style = "display:inline;outline:none;vertical-align: top;align:left;",
                actionButton("search_bt",icon =  icon("fas fa-search"), label = NULL, 
                             style = "height: 50px; width:100%;background-color:#ec6205;border-color:#ec6205;border:0px;border-radius:0px;"))
         )

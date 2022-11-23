@@ -26,10 +26,8 @@ dashboardSidebar(
   collapsed = TRUE,
   sidebarMenu(id = "tab", style = "font-size:13px; padding-top:18px;",
               menuItem("Home", tabName = "homeTab",icon = icon("home")),
-              menuItem("Under Investigation Reports",tabName="under_investigationTab",icon = icon("dashboard")),
-              menuItem("Resolved Breach Reports", tabName = "resolvedTab",icon = icon("bar-chart")
-              # menuItem("Generate Report", tabName = "reportTab",icon = icon("file-archive-o")),
-              # menuItem("About Us", tabName = "aboutTab",icon = icon("info")
+              menuItem("Searching",tabName="searchingTab",icon = icon("dashboard")),
+              menuItem("Booking", tabName = "bookingTab",icon = icon("bar-chart")
               )
   )
 )

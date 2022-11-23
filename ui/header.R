@@ -1,10 +1,10 @@
 dashboardHeader(title = "",
                 tags$li(h4("", 
-                           height = "50px",
+                           height = "35px",
                            style = "color:#A2482E;padding-top:14px; padding-bottom:10px;"),
                         class = "dropdown"),
                 tags$li(a(href = 'https://www.booking.com/',
                           img(src = 'logo.png',
-                              title = "https://www.booking.com/", height = "45px", width = "250px"),
+                              title = "https://www.booking.com/", height = "30px", width = "150px"),
                           style = "padding-top:10px; padding-bottom:10px;padding-right:40px;"),
                         class = "dropdown"))
